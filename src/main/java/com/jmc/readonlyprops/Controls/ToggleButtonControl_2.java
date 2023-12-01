@@ -14,7 +14,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 // Definição da classe principal, que estende a classe Application do JavaFX
-public class ToggleButtonControl2 extends Application {
+public class ToggleButtonControl_2 extends Application {
 
     // Método start, chamado quando a aplicação é iniciada
     @Override

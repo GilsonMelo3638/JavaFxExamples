@@ -12,7 +12,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 // Definição da classe principal, que estende a classe Application do JavaFX
-public class ToggleButtonControl extends Application {
+public class ToggleButtonControl_1 extends Application {
 
     // Variável para rastrear o estado do botão (ligado/desligado)
     Boolean isLightOn;

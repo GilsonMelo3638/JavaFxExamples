@@ -4,12 +4,11 @@ import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
 import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
 
 // Classe principal que estende Application, representando a aplicação JavaFX
-public class Tilepane extends Application {
+public class Tilepane_1 extends Application {
 
     // Método start, chamado quando a aplicação é iniciada
     @Override

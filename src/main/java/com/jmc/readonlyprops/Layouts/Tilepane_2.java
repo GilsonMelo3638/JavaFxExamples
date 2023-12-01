@@ -9,7 +9,7 @@ import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
 
 // Classe principal que estende Application, representando a aplicação JavaFX
-public class Tilepane2 extends Application {
+public class Tilepane_2 extends Application {
 
     // Método start, chamado quando a aplicação é iniciada
     @Override

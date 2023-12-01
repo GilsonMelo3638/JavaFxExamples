@@ -7,7 +7,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 // Classe principal que estende Application, representando a aplicação JavaFX
-public class Gridpane2 extends Application {
+public class Gridpane_2 extends Application {
 
     // Método start, chamado quando a aplicação é iniciada
     @Override

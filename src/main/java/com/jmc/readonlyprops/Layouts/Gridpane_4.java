@@ -2,20 +2,16 @@ package com.jmc.readonlyprops.Layouts;
 
 import javafx.application.Application;
 import javafx.geometry.HPos;
-import javafx.geometry.Pos;
 import javafx.geometry.VPos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 import javafx.stage.Stage;
 
 // Classe principal que estende Application, representando a aplicação JavaFX
-public class Gridpane4 extends Application {
+public class Gridpane_4 extends Application {
 
     // Método start, chamado quando a aplicação é iniciada
     @Override

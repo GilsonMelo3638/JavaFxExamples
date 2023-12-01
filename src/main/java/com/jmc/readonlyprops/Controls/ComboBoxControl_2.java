@@ -8,7 +8,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 // Classe principal que estende Application, representando a aplicação JavaFX
-public class ComboBoxControl2 extends Application {
+public class ComboBoxControl_2 extends Application {
 
     @Override
     public void start(Stage stage) {

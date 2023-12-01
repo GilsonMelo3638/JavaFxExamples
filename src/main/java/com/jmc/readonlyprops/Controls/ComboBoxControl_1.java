@@ -1,20 +1,17 @@
 package com.jmc.readonlyprops.Controls;
 
 import javafx.application.Application;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 // Classe principal que estende Application, representando a aplicação JavaFX
-public class ComboBoxControl extends Application {
+public class ComboBoxControl_1 extends Application {
 
     @Override
     public void start(Stage stage) {
