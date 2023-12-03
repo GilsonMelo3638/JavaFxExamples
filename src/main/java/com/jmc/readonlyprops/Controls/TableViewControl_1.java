@@ -6,6 +6,7 @@ import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TableView;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -15,6 +16,15 @@ public class TableViewControl_1 extends Application {
     @Override
     public void start(Stage stage) {
         VBox root = new VBox(10);
+        TableView<User> usersTable = new TableView<>(UserUtility.getUsersList());
+        usersTable.getColumns().addAll(
+                UserUtility.getFirstNameColumn(),
+                UserUtility.getLastNameColumn(),
+                UserUtility.getBirthDateColumn(),
+                UserUtility.getDeleteUserColumn()
+                );
+        usersTable.getSelectionModel().selectFirst();
+        root.getChildren().addAll(usersTable);
         Scene scene = new Scene(root, 500, 450);
         stage.setScene(scene);
         stage.setTitle("TableView Control Example");
