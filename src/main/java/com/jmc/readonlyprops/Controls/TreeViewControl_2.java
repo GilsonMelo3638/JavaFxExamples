@@ -17,9 +17,14 @@ public class TreeViewControl_2 extends Application {
 
     @Override
     public void start(Stage stage) {
+        // Configuração do layout principal
         VBox root = new VBox(10);
         root.setAlignment(Pos.CENTER);
+
+        // Criação da TreeView
         TreeView<String> treeView = new TreeView<>();
+
+        // Criação dos itens da TreeView
         TreeItem<String> classes = new TreeItem<>("Classes");
         TreeItem<String> classOne = new TreeItem<>("Class One");
         classOne.setExpanded(true);
@@ -37,18 +42,28 @@ public class TreeViewControl_2 extends Application {
                 new TreeItem<>("Gisele"),
                 new TreeItem<>("Gilson")
         );
-        classTwo.addEventHandler(TreeItem.branchCollapsedEvent(), e->
+
+        // Adiciona um manipulador de evento para o evento de recolher um nó da TreeView
+        classTwo.addEventHandler(TreeItem.branchCollapsedEvent(), e ->
                 System.out.println(e.getTreeItem().getValue()));
+
+        // Adiciona os itens à TreeView
         classes.getChildren().addAll(classOne, classTwo);
         treeView.setRoot(classes);
         treeView.setShowRoot(false);
+
+        // Configuração de edição da TreeView
         treeView.setEditable(true);
         treeView.setCellFactory(TextFieldTreeCell.forTreeView());
         treeView.setOnEditCommit(e -> {
+            // Atualiza o valor do nó com o novo valor após a edição
             e.getTreeItem().setValue(e.getNewValue());
         });
 
+        // Adiciona a TreeView ao layout principal
         root.getChildren().addAll(treeView);
+
+        // Configuração da cena
         Scene scene = new Scene(root, 500, 450);
         stage.setScene(scene);
         stage.setTitle("TreeView Control Example");
